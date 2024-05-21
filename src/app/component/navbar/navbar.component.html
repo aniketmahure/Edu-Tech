@@ -1,0 +1,41 @@
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark"> -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong" data-bs-theme="light">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="'/home'">EdTech</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" style="margin-left: 2%;">
+          <button mat-button class="nav-link active" color="primary" [routerLink]="'/courses'">Courses</button>
+        </li>
+        <li class="nav-item" style="margin-left: 2%;">
+          <button routerLink="/hhome" class="nav-link active" mat-button color="primary" [routerLink]="'/masterclass'">Masterclass</button>
+        </li>
+        <li class="nav-item dropdown" style="margin-left: 2%;">
+          <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Classes
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li><button class="dropdown-item" [routerLink]="'/class'" fragment="div1">Demo Class</button></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><button class="dropdown-item" [routerLink]="'/class'" fragment="div2">Classes</button></li> 
+          </ul>
+        </li>
+        <li class="nav-item" style="margin-left: 2%;width: auto;">
+          <button class="nav-link active" mat-button color="primary" [routerLink]="'/study'">StudyMaterial</button>
+        </li>
+      </ul>
+      <div class="d-flex flex-row-reverse ">
+        <li class="nav-link" style="list-style-type:none; padding-left: 10px;">
+          <button class="nav-link" type="button" class="btn btn-outline-warning">Register</button>
+        </li>
+        <li class="nav-link" style="list-style-type:none;">
+          <button class="nav-link" type="button" class="btn btn-outline-warning">Login</button>
+        </li>
+      </div>
+    </div>
+  </div>
+</nav>

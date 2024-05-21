@@ -1,0 +1,17 @@
+.mcard{
+    width: 30%;
+    margin-top: 2%;
+    min-width: 180px;
+    /* background-color: rgb(42, 42, 165);; */
+    height: 440px;
+    border-radius: 2%;
+    /* color: white; */
+    transition: transform .2s;
+    box-shadow: 0 4px 8px 0 rgba(33, 4, 79, 0.521), 0 6px 20px 0 rgba(0, 5, 161, 0.553);
+    /* padding-top: 1%; */
+    /* text-align: center; */
+}
+.mcard:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}

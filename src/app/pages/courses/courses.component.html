@@ -1,0 +1,130 @@
+<div class="pt-4" style="background-color: rgb(54, 54, 199);">
+  <app-navbar></app-navbar>
+</div>
+<div style="display:flex; flex-direction: row;flex-wrap:wrap;margin-top: 2%;">
+  <div class="div1">
+    <h3 style="text-align: center;">Apply Filters</h3>
+    <div>
+      <h3 style="color: rgb(54, 54, 199);">Domain</h3>
+      <li style="list-style-type:none;"><mat-checkbox class="example-margin" [(ngModel)]="dataflag" color="primary">Data
+          Science</mat-checkbox></li>
+      <li style="list-style-type:none;"><mat-checkbox class="example-margin" [(ngModel)]="ai"
+          color="primary">AI</mat-checkbox></li>
+      <li style="list-style-type:none;"><mat-checkbox class="example-margin" [(ngModel)]="sftwEng"
+          color="primary">Software Engineering</mat-checkbox></li>
+    </div>
+    <div>
+      <mat-divider></mat-divider>
+      <br>
+      <h3 style="color: rgb(54, 54, 199);">Course Type</h3>
+      <li style="list-style-type:none;"><mat-checkbox class="example-margin" [(ngModel)]="free"
+          color="primary">Free</mat-checkbox></li>
+      <li style="list-style-type:none;"><mat-checkbox class="example-margin" [(ngModel)]="paid"
+          color="primary">Paid</mat-checkbox></li>
+    </div>
+    <div>
+      <mat-divider></mat-divider>
+      <br>
+      <h3 style="color: rgb(54, 54, 199);">Course Level</h3>
+      <li style="list-style-type:none;"><mat-checkbox class="example-margin" [(ngModel)]="beginner"
+          color="primary">Beginner</mat-checkbox></li>
+      <li style="list-style-type:none;"><mat-checkbox class="example-margin" [(ngModel)]="iter"
+          color="primary">Intermediate</mat-checkbox></li>
+      <li style="list-style-type:none;"><mat-checkbox class="example-margin" [(ngModel)]="expert"
+          color="primary">Advance</mat-checkbox></li>
+    </div>
+    <div style="margin-bottom: 2%;margin-top: 2%;">
+      <button style="margin-left: 4%;margin-top: 2%;" mat-flat-button (click)="filter()" color="primary">Apply
+        Filter</button>
+      <button style="margin-left: 4%;margin-top: 2%;" mat-flat-button (click)="clear()" color="accent">Clear</button>
+    </div>
+  </div>
+  <div class="div2">
+    <h2 style="text-align: center;">Courses with Certification</h2>
+    <div class="card-container">
+      <!-- <mat-card class="card" *ngFor="let item of course">
+                <mat-card-header>
+                  <mat-card-title>{{item.name}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>               
+                  {{item.modules}}
+                </mat-card-content>
+              </mat-card> -->
+      <div class="card" *ngFor="let item of courseCpy">
+        <p style="right: 0%;position: absolute;
+                float: right;margin-left: auto; 
+margin-right: 1%; color: rgb(177, 162, 162);">{{item.type}}</p>
+        <p style="color: black;"><b>{{item.name}}</b></p>
+        <p>{{item.modules}}</p>
+        <p style="bottom: 0;">{{item.level}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<mat-divider></mat-divider>
+<div style="margin-top: 2%;margin-bottom: 2%;text-align: center;">
+  <h1>Here are the <b>Featured</b> Courses</h1>
+</div>
+<div style="display:flex; flex-direction: row;flex-wrap:wrap;margin-left: 2%;
+margin-right: 2%;">
+  <div class="bottomcard" style="width: 32% ;background-image: url('/../assets/course1.png');">
+    <h1><b>Java For Beginners</b></h1> 
+    <!-- <img style="width: 80%;height: 70% ;margin-bottom: 2%;" src="/../assets/course1.png">      -->
+    <p>901 Enrolled</p>
+    <button style="bottom: 0;" mat-flat-button color="primary">watch</button>
+  </div>
+  <div class="bottomcard" style="width: 32%;margin-left: 2%;background-image: url('/../assets/course3.png');color: rgb(54, 54, 199);">
+    <h1><b>DSA For Beginners</b></h1>
+    <p>322 Enrolled</p>
+    <button style="bottom: 0;" mat-flat-button color="primary">watch</button>
+  </div>
+  <div class="bottomcard" style="width: 32%;margin-left: 2%;background-image: url('/../assets/course2.jpg');color: black;">
+    <h1><b>Python: Basic To Advance</b></h1>
+    <p>774 Enrolled</p>
+    <button style="bottom: 0;position: relative;" mat-flat-button color="primary">watch</button>
+  </div>
+</div>
+<br>
+<div style="margin-left: 2%;margin-right: 2%;margin-top: 2%;">
+  <mat-divider></mat-divider>
+  <h3 style="margin-top: 2%;"><b>Introduction to Online Programming Courses</b></h3>
+  <p>EdTech's Online Programming Courses provide a transformative learning experience for aspiring programmers and
+    software engineers.
+    With a commitment to excellence in computer science education, EdTech offers a range of courses that empower
+    individuals to master data structures, algorithms, and programming languages.
+    Whether you're a beginner looking to kickstart your coding journey or an experienced developer aiming to enhance
+    your skills, EdTech's courses are designed to accelerate your career growth in the tech industry.</p>
+  <br>
+  <h3><b>The Value of Certifications and How to Showcase Your Skills</b></h3>
+  <p>Certifications serve as official endorsements of your expertise, boosting your appeal in the professional realm and
+    illustrating your commitment to continuous development. They also offer a guided learning experience. To showcase
+    your acquired skills:
+    <li>Resume: Prominently feature relevant certifications.</li>
+    <li>LinkedIn: Include certifications and digital badges in your profile.</li>
+    <li>Online Portfolio: Display related projects.</li>
+    <li>Cover Letter: Highlight certifications pertinent to the job.</li>
+    <li>Networking and Interviews: Discuss your certifications.</li>
+    <li>Job Applications: Use certifications to differentiate yourself.</li>
+    <li>Professional Platforms: Make certifications visible on job portals.</li>
+    <li>Recommendations: Seek endorsements from mentors or peers.</li>
+    <li>Stay Current: Regularly update your certifications.</li>
+  </p>
+
+  <h3><b>FAQs</b></h3>
+  <p>
+    <li>Q: Do I need prior coding experience to enroll in these online programming courses?
+      Ans: No, prior coding experience is not required.</li>
+    <li>Q: How much time should I dedicate to these courses each week?
+      Ans: Time depends on each course but they are self paced so can be finished as per your convenience</li>
+    <li>Q: Can I enroll in multiple programming courses simultaneously?
+      Ans: Yes, you can enroll in multiple courses at once.</li>
+    <li>Q: Do I need to download special software for these courses?
+      Ans: Some courses may require specific software downloads.</li>
+    <li>
+      Q: What if I struggle to understand certain concepts?
+      Ans: Assistance and resources are available for challenging concepts.
+    </li>
+  </p>
+</div>
+<app-footer></app-footer>

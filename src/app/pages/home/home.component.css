@@ -1,0 +1,118 @@
+section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+  }
+  
+  .example-button-row {
+    color: aliceblue;
+  }
+
+  .topdiv{
+    height: 300px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  .statsCard:hover{
+    transition: transform .2s ;
+    transform: scale(1.01);
+  }
+  .card0{
+    background-image: url('/../assets/register2.jpg');
+    background-size: cover;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    height: 300px;
+  }
+  .card1{
+    background-size: cover;
+    height: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+    height: 300px;
+  }
+  .card2{
+    max-width: 1400px;
+  margin: 40px auto 0 auto;
+  background-color: #FFF;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
+
+  /* import */
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+  }
+  
+  .example-card {
+    max-width: 300px;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .bottom-card{
+    /* border-radius: 1%; */
+    max-width: 400px;
+    min-width: 30%;
+    min-height: 60%;
+    margin-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 1%;
+    padding-bottom: 1%;
+    transition: transform .2s;
+    box-shadow: 0px 0px 10px 0px #9b9b9b,
+        0 1px 1px 0 #9b9b9b,
+        0 1px 3px 0 #9b9b9b;
+  }
+  .bottom-card:hover {
+    transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .bottomsheet{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-shadow: 0px 0px 10px 0px #9b9b9b,
+        0 1px 1px 0 #9b9b9b,
+        0 1px 3px 0 #9b9b9b;
+  }
+  .bottomsheetImage{
+    width: 10%;
+    max-width: 10%;
+    min-width: 5%;
+    transition: transform .2s;
+  }
+  .bottomsheetImage :hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .comment-card{
+    background-color: yellow;
+    border-radius: 1%;
+    max-width: 500px;
+    min-width: 30%;
+  }
+  

@@ -1,0 +1,21 @@
+.study{
+    margin-top: 2%;
+    width: 30%;
+    height: 80px;
+    margin-bottom: 2%;
+    text-align: center;
+    padding-top: 2%;
+    
+    border-width: 2px;
+    transition: transform .2s;
+    border-color: rgba(54, 54, 199, 0.676);
+    border-radius: 10px;
+    border-style: solid;
+    /* background-color: rgba(54, 54, 199, 0.292); */
+}
+.study:hover{
+    transform: scale(0.94);
+    background-color: rgba(54, 54, 199, 0.326);
+    cursor: pointer;
+    font-size: large;
+}
