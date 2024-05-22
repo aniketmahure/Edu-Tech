@@ -56,6 +56,7 @@ section {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 2%;
   }
 
   /* import */
@@ -115,4 +116,17 @@ section {
     max-width: 500px;
     min-width: 30%;
   }
+
+  .sheet{
+    margin-top: 2%;
+    width: 350px;
+    height: 250px; 
+    text-align: center;
+  }
+  .sheet:hover{
+    filter: blur(0.8px);
+    cursor: pointer;
+  
+  }
+/* experiment */
   

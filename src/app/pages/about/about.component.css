@@ -1,0 +1,20 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .title {
+    color: #6f42c1; /* Deep violet */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-content {
+    text-align: justify;
+    color: #333; /* Dark text for readability */
+  }
+  
+  .team-section {
+    margin-top: 2rem;
+  }

@@ -5,6 +5,9 @@ import { CoursesComponent } from './pages/courses/courses.component';
 import { MasterclassComponent } from './pages/masterclass/masterclass.component';
 import { StudyComponent } from './pages/study/study.component';
 import { ClassesComponent } from './pages/classes/classes.component';
+import { AboutComponent } from './pages/about/about.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
   {
@@ -26,6 +29,19 @@ const routes: Routes = [
   {
     path:'class',
     component:ClassesComponent
+  }
+  ,
+  {
+    path:'about',
+    component:AboutComponent
+  },
+  {
+    path:'login',
+    component:LoginComponent
+  },
+  {
+    path:'register',
+    component:RegisterComponent
   }
 ];
 

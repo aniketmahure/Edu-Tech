@@ -23,6 +23,10 @@ import {MatListModule} from '@angular/material/list';
 import { StudyComponent } from './pages/study/study.component';
 import { ClassesComponent } from './pages/classes/classes.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { AboutComponent } from './pages/about/about.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,10 @@ import {MatTabsModule} from '@angular/material/tabs';
     FooterComponent,
     MasterclassComponent,
     StudyComponent,
-    ClassesComponent
+    ClassesComponent,
+    AboutComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +57,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatDividerModule,
     MatListModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
